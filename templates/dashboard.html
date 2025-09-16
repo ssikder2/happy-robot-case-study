@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freight API Dashboard</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Freight API Dashboard</h1>
+            <p>Real-time metrics and analytics for carrier load matching</p>
+        </div>
+        
+        
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <h3>Total Calls</h3>
+                            <div class="metric-value" id="total-calls">0</div>
+                            <div class="metric-subtitle">Carrier calls processed</div>
+                        </div>
+                        <div class="metric-card">
+                            <h3>Booking Success Rate</h3>
+                            <div class="metric-value" id="booking-success-rate">0%</div>
+                            <div class="metric-subtitle">Successful negotiations</div>
+                        </div>
+                    </div>
+        
+        
+        <div class="inquiry-details">
+            <h3>Most Recent Call Details</h3>
+            <div id="inquiry-details-content">
+                <div class="no-data">Loading...</div>
+            </div>
+        </div>
+        
+        <div class="recent-searches">
+            <h3>Recent Call Activity</h3>
+            <div id="recent-searches-list">
+                <div class="search-item">
+                    <div class="search-route">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

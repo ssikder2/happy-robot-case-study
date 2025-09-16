@@ -1,0 +1,19 @@
+app = "freight-api-happy-robot"
+primary_region = "iad"
+
+[build]
+
+[env]
+  # API_KEY should be set as a secret: flyctl secrets set API_KEY=your-key-here
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
