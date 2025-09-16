@@ -99,16 +99,6 @@ docker run -p 8000:8000 -e API_KEY=your-api-key-here freight-api
    # Then edit .env and replace the API key with your own
    ```
 
-## Sample Loads
-
-The API includes 6 sample loads covering various routes and equipment types:
-- Chicago → Dallas (Dry Van)
-- Atlanta → Miami (Reefer) 
-- Los Angeles → Phoenix (Flatbed)
-- New York → Boston (Dry Van)
-- Houston → Denver (Reefer)
-- Chicago → Atlanta (Dry Van)
-
 ## HappyRobot Integration
 
 **HTTPS Endpoint**: `https://freight-api-happy-robot.fly.dev/search-loads`  
